@@ -23,7 +23,7 @@
         </nav>
 
         <div class="header-right">
-            <select id="language-select">
+            <select id="language-select" onchange="changeLanguage()">
                 <option value="pt">Português</option>
                 <option value="es">Español</option>
                 <option value="en">English</option>
@@ -38,18 +38,18 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Bem-vindo ao Meu Portfolio</h1>
-            <p>Desenvolvedor Full Stack resolvendo problemas e criando soluções desde 2022</p>
+            <h1 id="hero-title">Bem-vindo ao Meu Portfolio</h1>
+            <p id="hero-description">Desenvolvedor Full Stack resolvendo problemas e criando soluções desde 2022</p>
             <div class="hero-buttons">
-                <a href="#projetos" class="hero-button">Veja Meus Projetos</a>
-                <a href="./assets/curriculo.pdf" class="hero-button" download>Baixar Currículo</a>
+                <a href="#projetos" id="hero-projects-button" class="hero-button">Veja Meus Projetos</a>
+                <a href="./assets/curriculo.pdf" id="hero-resume-button" class="hero-button" download>Baixar Currículo</a>
             </div>
         </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="projects" id="projetos">
-        <h2>Meus Projetos</h2>
+        <h2 id="projects-title">Meus Projetos</h2>
         <div class="project-container">
             <button class="nav-button left" onclick="scrollProjects(-1)">&#10094;</button>
             <div class="project-wrapper">
@@ -58,8 +58,8 @@
                     <div class="project-item">
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>API Gajoyland</h3>
-                                <p>REST API da plataforma principal da Gajoyland desenvolvida em NodeJS com TypeScript,
+                                <h3 class="project-title">API Gajoyland</h3>
+                                <p class="project-description">REST API da plataforma principal da Gajoyland desenvolvida em NodeJS com TypeScript,
                                     PostgreSQL, Principios SOLID e MVC</p>
                                 <a href="https://github.com/ebagabee/Backend-Gajoyland" target="_blank"
                                     class="project-button">Codigo Fonte</a>
@@ -70,8 +70,8 @@
                     <div class="project-item">
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>Five FPS</h3>
-                                <p>Landing page desenvolvida para apresentação de produto de otimização de software</p>
+                                <h3 class="project-title">Five FPS</h3>
+                                <p class="project-description">Landing page desenvolvida para apresentação de produto de otimização de software</p>
                                 <a href="https://gajoyy.github.io/LandingPage-FiveFPS/" target="_blank"
                                     class="project-button">Acessar
                                     Site</a>
@@ -82,16 +82,14 @@
                     <div class="project-item">
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>Contas a pagar</h3>
-                                <p> controle financeiro de contas a pagar desenvolvido em PHP utilizando programação
+                                <h3 class="project-title">Contas a pagar</h3>
+                                <p class="project-description">Controle financeiro de contas a pagar desenvolvido em PHP utilizando programação
                                     orientada a objetos (POO) com arquitetura MVC</p>
                                 <a href="https://github.com/ebagabee/Controle-Financeiro-MVC" target="_blank"
                                     class="project-button">Codigo Fonte</a>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <button class="nav-button right" onclick="scrollProjects(1)">&#10095;</button>
@@ -111,6 +109,3 @@
     </footer>
 
     <script src="./script.js"></script>
-</body>
-
-</html>
