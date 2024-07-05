@@ -367,3 +367,33 @@ footer {
 .footer-content a:hover img {
     transform: scale(1.1);
 }
+
+
+.dark-mode {
+    background-color: #000000;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #000000;
+    border-color: #666; 
+    color: #fff;
+}
+
+.dark-mode header a {
+    color: #fff;
+}
+
+.dark-mode footer {
+    background-color: #000000; /* Cor de fundo para o footer no modo escuro */
+    border-color: #666; /* Bordas no modo escuro */
+}
+
+.dark-mode #projetos {
+    background-color: #000000; /* Cor de fundo para o footer no modo escuro */
+    border-color: #666;
+}
+
+.dark-mode .footer-content img {
+    filter: invert(1); /* Inverte as cores para branco */
+}
